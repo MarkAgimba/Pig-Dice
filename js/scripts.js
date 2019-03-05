@@ -117,4 +117,12 @@ player1.roll = rolldice();
     player1.winnerCheck();
   });
 
-  $("button#
+  $("button#player2-hold").click(function(event){
+    player2.hold();
+    $("#overall-total-2").text(player2.overalltotal);
+    $("#accumulating-total-2").empty();
+    $("#die-roll-2").empty();
+    player2.winnerCheck();
+  });
+
+});

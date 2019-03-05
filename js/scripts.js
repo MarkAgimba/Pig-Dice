@@ -78,3 +78,18 @@ $(document).ready(function() {
 
     player1.playerName=player1Name;
     player2.playerName=player2Name;
+
+  });
+  $("button#new-game").click(function(event){
+    $(".player-console").hide();
+    clearValues();
+    player1.newGame();
+    player2.newGame();
+    $("#accumulating-total-1").empty();
+    $("#overall-total-1").empty();
+    $("#die-roll-1").empty();
+    $("#accumulating-total-2").empty();
+    $("#overall-total-2").empty();
+    $("#die-roll-2").empty();
+
+    $(".start-menu").show();

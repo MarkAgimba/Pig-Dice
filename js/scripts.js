@@ -44,7 +44,7 @@ Player.prototype.hold= function () {
 // }
 // check for 100
 Player.prototype.winnerCheck = function () {
-  if (this.totalscore >= 100) {
+  if (this.overalltotal >= 100) {
     alert(this.playerName + " Congratulations, YOU WON!");
   }
 }
@@ -99,12 +99,22 @@ $(document).ready(function() {
 player1.roll = rolldice();
    $("#die-roll-1").text(player1.roll);
    player1.rollone();
-   $("#accumulating-total-1").text(player1.tempscore);
+   $("#accumulating-total-1").text(player1.accumulatingtotal);
  });
 
  $("button#player2-roll").click(function(event){
     player2.roll = rolldice();
     $("#die-roll-2").text(player2.roll);
     player2.rollone();
-    $("#accumulating-total-2").text(player2.tempscore);
+    $("#accumulating-total-2").text(player2.accumulatingtotal);
   });
+
+ $("button#player1-hold").click(function(event){
+    player1.hold();
+    $("#overall-total-1").text(player1.overalltotal);
+    $("#accumulating-total-1").empty();
+    $("#die-roll-1").empty();
+    player1.winnerCheck();
+  });
+
+  $("button#

@@ -1,77 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet"  >
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Pig Dice</title>
+    <title>M.M.A Pig Dice</title>
   </head>
   <body background="img/ccc.jpeg">
 
-    <div style="color:red;" background="color:blue;" class="container">
+    <div style="color:red;" background="color:blue;" class="start-menu container">
       <div class="jumbotron">
         <h1 style="color:red;"><strong><i>M.M.A PIG DICE</i></strong></h1>
           <form id="player-1">
             <div class="form-group">
               <label for="player1Name"><i>Player 1 Name</i>:</label>
-              <input required type="player1Name form-control" type=text>
-             </div>
-           </form>
-           <form id="player-2">
-             <div class="form-group">
-               <label for="player2Name"><i>Player 2 Name</i>:</label>
-               <input class="player2Name form-control" type="text">
-             </div>
-           </form>
-           <button style="background-color:red;" id="play" class="btn-success btn"><strong>PLAY</strong></button>
-       </div>
-
-       <h6 style="font-size:4vw">GOODLUCK & ENJOY &#128512;</h6>
-       <img height= 100px; width= 580px; src="img/cnn.jpg">
-     </div>
-
-     <div class="player-console container">
-         <div class = "row">
-           <div class="col-md-6">
-             <h3><strong>Player 1:</strong> <span id = "player1Name"><span></h3>
-               <button style="background-color:blue;" id="player1-roll" class="btn-info btn">Roll</button>
-               <button style="background-color:blue;" id="player1-hold" class="btn-info btn">Hold</button>
-             <h3 style="color:blue;">Score on Dice: <span id="die-roll-1"></span></h3>
-             <p>Accumulating Total: <span id="round-total-1"></span></p>
-             <p><u>Overall Total: <span id="total-score-1"></span></u></p>
-     </div>
-
-        <div class="container">
-
+              <input required class="player1Name form-control" type="text">
+            </div>
+          </form>
+          <form id="player-2">
+            <div class="form-group">
+              <label for="player2Name"><i>Player 2 Name</i>:</label>
+              <input class="player2Name form-control" type="text">
+            </div>
+          </form>
+          <button style="background-color:red;" id="play" class="btn-info btn"><strong>PLAY</strong></button>
       </div>
 
-    </div>
-       <div class="col-md-6">
-         <h3><strong>Player 2</strong>: <span id = "player2Name"><span></h3>
-           <button style="background-color:blue;" id="player2-roll" class="btn-info btn">Roll</button>
-           <button style="background-color:blue;" id="player2-hold" class="btn-info btn">Hold</button>
-           <h3 style="color:blue;">Score on Dice: <span id="die-roll-2"></span></h3>
-           <p>Accumulating Total: <span id="round-total-2"></span></p>
-           <p><u>Overall total: <span id="total-score-2"></span></u></p>
-       </div>
-       </div>
-         <button style="background-color:blue;" id="new-game" class="btn-primary btn">RESTART</button>
-       <div class="modal-body">
-       <h3><strong><u>Game Play:</u></strong></h3>
-          <p style="color:blue;">On a turn, a player rolls the die repeatedly. The goal is to accumulate as many points as possible, adding up the numbers rolled on the die. However, if a player rolls a 1, the player's turn is over and any points they have accumulated during this turn are forfeited. Rolling a 1 doesn't wipe out your entire score from previous turns, just the total earned during that particular roll.</p>
-          <p style="color:blue;">A player can also choose to hold (stop rolling the die) if they do not want to take a chance of rolling a 1 and losing all of their points from this turn. If the player chooses to hold, all of the points rolled during that turn are added to his or her score.</p>
-          <p style="color:blue;">When a player reaches a total of 100 or more points, the game ends and that player is the winner.</p>
-          <p style="color:blue;"><span class="font-weight-bold">The first player to get 100 is the Winner!</span></p>
-
-
-        <h5 style="color:navy;">&#169; <u>Copyright 2019 M.M.A</u></h5>
-
-      </div>
-
+      <h6 style="font-size:4vw">GOODLUCK & ENJOY &#128512;</h6>
+      <img height= 100px; width= 580px; src="img/bdh.jpg">
     </div>
 
 
- </body>
+    <div class="player-console container">
+        <div class = "row">
+          <div class="col-md-6">
+            <h3><strong>Player 1:</strong> <span id = "player1Name"><span></h3>
+              <button style="background-color:blue;" id="player1-roll" class="btn-success btn">Roll</button>
+              <button style="background-color:blue;" id="player1-hold" class="btn-success btn">Hold</button>
+            <h3 style="color:blue;">Score on Dice: <span id="die-roll-1"></span></h3>
+            <p>Accumulating Total: <span id="round-total-1"></span></p>
+            <p><u>Overall Total: <span id="total-score-1"></span></u></p>
+    </div>
+
+       <div class="container"
+
+        <div class="col-md-6">
+          <h3><strong>Player 2</strong>: <span id = "player2Name"><span></h3>
+            <button style="background-color:blue;" id="player2-roll" class="btn-success btn">Roll</button>
+            <button style="background-color:blue;" id="player2-hold" class="btn-success btn">Hold</button>
+            <h3 style="color:blue;">Score on Dice: <span id="die-roll-2"></span></h3>
+            <p>Accumulating Total: <span id="round-total-2"></span></p>
+            <p><u>Overall total: <span id="total-score-2"></span></u></p>
+        </div>
+        </div>
+          <button style="background-color:blue;" id="new-game" class="btn-success btn">RESTART</button>
+        <div class="modal-body">
+        <h3><strong><u>Game Play:</u></strong></h3>
+           <p style="color:blue;">On a turn, a player rolls the die repeatedly. The goal is to accumulate as many points as possible, adding up the numbers rolled on the die. However, if a player rolls a 1, the player's turn is over and any points they have accumulated during this turn are forfeited. Rolling a 1 doesn't wipe out your entire score from previous turns, just the total earned during that particular roll.</p>
+           <p style="color:blue;">A player can also choose to hold (stop rolling the die) if they do not want to take a chance of rolling a 1 and losing all of their points from this turn. If the player chooses to hold, all of the points rolled during that turn are added to his or her score.</p>
+           <p style="color:blue;">When a player reaches a total of 100 or more points, the game ends and that player is the winner.</p>
+           <p style="color:blue;"><span class="font-weight-bold">The first player to get 100 is the Winner!</span></p>
+
+
+         <h5 style="color:navy;">&#169; <u>Copyright 2019 M.M.A</u></h5>
+
+       </div>
+
+     </div>
+
+
+  </body>
 </html>

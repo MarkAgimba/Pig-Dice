@@ -101,3 +101,10 @@ player1.roll = rolldice();
    player1.rollone();
    $("#accumulating-total-1").text(player1.tempscore);
  });
+
+ $("button#player2-roll").click(function(event){
+    player2.roll = rolldice();
+    $("#die-roll-2").text(player2.roll);
+    player2.rollone();
+    $("#accumulating-total-2").text(player2.tempscore);
+  });
